@@ -8,7 +8,7 @@ export const LanguageCard: React.FC<Language> = ({ language, done, toDo, unresol
     <div className="card">
       <div className="card__header">
         <div className="card__header-title">
-          <img className="card__header-img" src={flag} />
+          <img className="card__header-img" alt="flag" src={flag} />
           {language}
         </div>
         <ProgressBar done={done} />

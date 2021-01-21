@@ -35,6 +35,7 @@ export const SideBar: React.FC = () => {
           <p className="info__block-title">keys</p>
           <p className="info__block-value">1834</p>
         </div>
+
         <div className="info__block">
           <p className="info__block-title">qa issues</p>
           <a href="#" className="info__block-value info__block-value--link">
@@ -45,25 +46,25 @@ export const SideBar: React.FC = () => {
 
       <div className="button-container">
         <button className="button-item__icon" disabled>
-          <img src={ArrowUp} />
+          <img src={ArrowUp} alt="icon" />
         </button>
         <button className="button-item__icon" disabled>
-          <img src={ArrowDown} />
+          <img src={ArrowDown} alt="icon" />
         </button>
         <button className="button-item__icon" disabled>
-          <img src={CheckMark} />
+          <img src={CheckMark} alt="icon" />
         </button>
         <button className="button-item__icon" disabled>
-          <img src={User} />
+          <img src={User} alt="icon" />
         </button>
         <button className="button-item__icon" disabled>
-          <img src={Pulse} />
+          <img src={Pulse} alt="icon" />
         </button>
         <button className="button-item__icon" disabled>
-          <img src={Camera} />
+          <img src={Camera} alt="icon" />
         </button>
         <button className="button-item__icon" disabled>
-          <img src={Book} />
+          <img src={Book} alt="icon" />
         </button>
         <button className="button-item__text button-item__text--roamer">Roamer</button>
         <button className="button-item__text button-item__text--ios">iOS</button>

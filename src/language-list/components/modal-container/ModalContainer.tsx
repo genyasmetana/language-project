@@ -38,6 +38,10 @@ export const ModalContainer: React.FC<IModalContainer> = ({ isOpen, closeHandler
 
   const handleSubmit = () => {
     dispatch(setNewLanguageAction(language));
+    setLanguage({
+      label: '',
+      value: '',
+    });
     closeHandler();
   };
 
