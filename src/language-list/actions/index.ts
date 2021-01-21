@@ -8,6 +8,11 @@ import {
 } from '../models/actions';
 import mockData from '../../__mock__/data.json';
 
+interface ICountry {
+  value: string;
+  label: string;
+}
+
 export const getLanguagesDataAction = () => (dispatch: Dispatch<GetLanguagesTypes>): IGetLanguagesSuccess => {
   const storedLanguages = window.localStorage.getItem('languages')
     ? JSON.parse(window.localStorage.getItem('languages') || '')
@@ -21,7 +26,7 @@ export const getLanguagesDataAction = () => (dispatch: Dispatch<GetLanguagesType
   });
 };
 
-export const setNewLanguageAction = (country: any) => (
+export const setNewLanguageAction = (country: ICountry) => (
   dispatch: Dispatch<GetLanguagesTypes>,
   getState: any,
 ): ISetNewLanguage => {

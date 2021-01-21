@@ -29,7 +29,7 @@ export const ProgressBar: React.FC<IProgressBar> = ({ done, height }) => {
 
   return (
     <div className="progress" style={wrapperStyles}>
-      <div className="progress__bar" style={barStyles}></div>
+      <div className="progress__bar" style={barStyles} />
     </div>
   );
 };
