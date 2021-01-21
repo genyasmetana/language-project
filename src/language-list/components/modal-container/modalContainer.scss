@@ -1,0 +1,21 @@
+.modal-block {
+  &__title {
+    font-size: 21px;
+    line-height: 25px;
+
+    color: #000000;
+    margin: 0 0 25px;
+  }
+
+  &__select {
+    margin-bottom: 30px;
+  }
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+
+    button:first-child {
+      margin-right: 10px;
+    }
+  }
+}

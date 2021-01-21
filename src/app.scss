@@ -1,0 +1,56 @@
+/* Default styles for link tags */
+
+a {
+  color: #5489dc;
+
+  &:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+  }
+}
+
+/* Default styles for BUTTONS */
+
+button {
+  background: transparent;
+
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}
+
+.button {
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 9px 13px;
+  border-radius: 5px;
+  color: black;
+
+  &:not(:disabled):hover {
+    opacity: 0.8;
+  }
+
+  &--outline {
+    color: #5489dc;
+    border: 1px solid #a9c4ed;
+  }
+
+  &--fill {
+    background: #5489dc;
+    color: white;
+    border: 1px solid transparent;
+  }
+}
+
+/* Default ROOT styles */
+
+* {
+  box-sizing: border-box;
+}
