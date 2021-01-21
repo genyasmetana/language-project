@@ -1,0 +1,47 @@
+.card {
+  padding: 12px;
+  border-radius: 5px;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0 1px 5px;
+  }
+
+  &__header-title {
+    font-size: 13px;
+    line-height: 15px;
+    color: #5489dc;
+    display: flex;
+    align-items: center;
+  }
+
+  &__header-img {
+    margin-right: 6px;
+    height: 10px;
+    border: 1px solid rgba(247, 244, 244, 0.5);
+  }
+
+  &__footer {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+
+    p {
+      text-transform: uppercase;
+    }
+  }
+
+  &__descr-title {
+    font-size: 10px;
+    line-height: 12px;
+    color: rgba(136, 136, 136, 0.95);
+  }
+
+  &__descr-value {
+    font-size: 17px;
+    line-height: 20px;
+    color: rgba(119, 119, 119, 0.95);
+
+    &--link {
+      color: #5489dc;
+    }
+  }
+}

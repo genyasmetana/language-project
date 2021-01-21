@@ -1,0 +1,48 @@
+@import '../media/styles/media.scss';
+
+.container {
+  grid-template-columns: 1fr;
+  padding: 10px 12px;
+
+  display: grid;
+  max-width: 1134px;
+  margin: 30px auto;
+
+  @include media(min, sm) {
+    grid-template-columns: 200px 1fr;
+  }
+}
+.wrapper {
+  &__btn-block {
+    display: flex;
+    margin-bottom: 35px;
+
+    button {
+      margin-right: 5px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 72px;
+    grid-gap: 18px 20px;
+
+    @include media(min, sm) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include media(min, md) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include media(min, lg) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  &__add-block {
+    margin: 12px;
+  }
+}
